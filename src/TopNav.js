@@ -1,25 +1,28 @@
 import React from 'react';
+import Buttons from "./Buttons";
 
 const TopNav = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1 space-x-10">
-                <a className="normal-case text-xl">IFTTT</a>
+                <a className="text-2xl font-bold">IFTTT</a>
                 <div>
-                    <button className="btn btn-active btn-primary">Welcome to IFTTT</button>
+                    <Buttons buttonText="Welcome to IFTTT" buttonColorClass="bg-blue-500"/>
+
                 </div>
             </div>
 
             <div className="flex space-x-10">
                 <div className="flex space-x-10">
-                    <p>Applets</p>
-                    <p>Explore</p>
-                    <p>Developers</p>
+                    <p className="text-2xl font-bold">Applets</p>
+                    <p className="text-2xl font-bold">Explore</p>
+                    <p className="text-2xl font-bold">Developers</p>
                 </div>
                 <div className="flex space-x-10">
 
-                    <button className="btn btn-active">Upgrade</button>
-                    <button className="btn btn-active">Create</button>
+                    <Buttons buttonText="Upgrade" buttonColorClass="bg-gray-700"/>
+                    <Buttons buttonText="Create" buttonColorClass="bg-gray-700"/>
+
 
                 </div>
                 <div className="dropdown dropdown-end">
