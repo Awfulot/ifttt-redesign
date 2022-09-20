@@ -4,8 +4,8 @@ import DisplayGrid from "./DisplayGrid";
 
 const Content = () => {
     return (
-        <div>
-            <h1>Explore</h1>
+        <div className="w-1/2 mx-auto border-2">
+            <h1 className="text-3xl text-center mt-6">Explore</h1>
             <SearchSection/>
             <DisplayGrid/>
         </div>

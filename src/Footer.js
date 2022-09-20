@@ -4,7 +4,7 @@ import IftttAd from "./IftttAd";
 
 const Footer = () => {
     return (
-        <div>
+        <div className="w-1/2 mx-auto border-2">
             <div>
                 <p>Download on the App Store</p>
             </div>

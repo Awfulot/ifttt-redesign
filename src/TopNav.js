@@ -2,15 +2,44 @@ import React from 'react';
 
 const TopNav = () => {
     return (
-        <div>
-            <p>IFTTT</p>
-            <button>Welcome to IFTTT</button>
-            <p>My Applets</p>
-            <p>Explore</p>
-            <p>Developers</p>
-            <button>Upgrade</button>
-            <button>Create</button>
-            <img src = "" alt="profile icon"/>
+        <div className="navbar bg-base-100">
+            <div className="flex-1 space-x-10">
+                <a className="normal-case text-xl">IFTTT</a>
+                <div>
+                    <button className="btn btn-active btn-primary">Welcome to IFTTT</button>
+                </div>
+            </div>
+
+            <div className="flex space-x-10">
+                <div className="flex space-x-10">
+                    <p>Applets</p>
+                    <p>Explore</p>
+                    <p>Developers</p>
+                </div>
+                <div className="flex space-x-10">
+
+                    <button className="btn btn-active">Upgrade</button>
+                    <button className="btn btn-active">Create</button>
+
+                </div>
+                <div className="dropdown dropdown-end">
+                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                        <div className="w-10 rounded-full">
+                            <img src="https://placeimg.com/80/80/people" />
+                        </div>
+                    </label>
+                    <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a className="justify-between">
+                                Profile
+                                <span className="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 };
