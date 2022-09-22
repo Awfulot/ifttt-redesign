@@ -1,6 +1,8 @@
 import React from 'react';
 
-const DisplayGrid = ({text}) => {
+const DisplayGridCard = ({text}) => {
+
+
     return (
         <div className="mt-5">
             <div className="card w-full bg-base-100 shadow-xl image-full">
@@ -16,4 +18,4 @@ const DisplayGrid = ({text}) => {
     );
 };
 
-export default DisplayGrid;
+export default DisplayGridCard;
