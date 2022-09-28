@@ -11,10 +11,7 @@ const SearchSection = () => {
     const [displayServicesCard, setDisplayServicesCard] = useState(false);
     const [displayAppletsCard, setDisplayAppletsCard] = useState(false);
 
-    const [allCardTabStatus, setAllCardTabStatus] = useState("tab-active")
-    const [storyCardTabStatus, setStoryCardTabStatus] = useState("")
-    const [servicesCardTabStatus, setServicesCardTabStatus] = useState("")
-    const [appletsCardTabStatus, setAppletsCardTabStatus] = useState("")
+
 
     const allCardsClick = () => {
         setDisplayAllCards(true)
@@ -22,10 +19,7 @@ const SearchSection = () => {
         setDisplayServicesCard(false)
         setDisplayAppletsCard(false)
 
-        setAppletsCardTabStatus("")
-        setAllCardTabStatus("tab-active")
-        setStoryCardTabStatus("")
-        setServicesCardTabStatus("")
+
     };
     const storyCardsClick = () => {
         setDisplayAllCards(false)
@@ -33,10 +27,7 @@ const SearchSection = () => {
         setDisplayServicesCard(false)
         setDisplayAppletsCard(false)
 
-        setAppletsCardTabStatus("")
-        setAllCardTabStatus("")
-        setStoryCardTabStatus("tab-active")
-        setServicesCardTabStatus("")
+
     };
     const servicesCardsClick = () => {
         setDisplayAllCards(false)
@@ -44,10 +35,7 @@ const SearchSection = () => {
         setDisplayServicesCard(true)
         setDisplayAppletsCard(false)
 
-        setAppletsCardTabStatus("")
-        setAllCardTabStatus("")
-        setStoryCardTabStatus("")
-        setServicesCardTabStatus("tab-active")
+
     };
     const appletsCardsClick = () => {
         setDisplayAllCards(false)
@@ -55,10 +43,7 @@ const SearchSection = () => {
         setDisplayServicesCard(false)
         setDisplayAppletsCard(true)
 
-        setAppletsCardTabStatus("tab-active")
-        setAllCardTabStatus("")
-        setStoryCardTabStatus("")
-        setServicesCardTabStatus("")
+
     };
 
 
@@ -68,10 +53,10 @@ const SearchSection = () => {
         <div>
             <div>
                 <div className="tabs flex space-x-10 justify-evenly">
-                    <a onClick={() => allCardsClick()} className={`tab tab-bordered ${allCardTabStatus}`}>All</a>
-                    <a onClick={() => appletsCardsClick()} className={`tab tab-bordered ${appletsCardTabStatus}`}>Applets</a>
-                    <a onClick={() => servicesCardsClick()} className={`tab tab-bordered ${servicesCardTabStatus}`}>Services</a>
-                    <a onClick={() => storyCardsClick()} className={`tab tab-bordered ${storyCardTabStatus}`}>Stories</a>
+                    <a onClick={() => allCardsClick()} className={displayAllCards ? "tab tab-active" : "tab"}>All</a>
+                    <a onClick={() => appletsCardsClick()} className={displayAppletsCard ? "tab tab-active" : "tab"}>Applets</a>
+                    <a onClick={() => servicesCardsClick()} className={displayServicesCard ? "tab tab-active" : "tab"}>Services</a>
+                    <a onClick={() => storyCardsClick()} className={displayStoryCards? "tab tab-active" : "tab"}>Stories</a>
                 </div>
             </div>
             <div className="form-control">

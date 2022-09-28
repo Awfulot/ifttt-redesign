@@ -1,11 +1,13 @@
 import React from 'react';
 import Buttons from "./Buttons";
+import {Link} from "react-router-dom";
 
 const TopNav = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1 space-x-10">
-                <a className="text-2xl font-bold">IFTTT</a>
+
+                <Link to="/" className="text-2xl font-bold">IFTTT</Link>
                 <div>
                     <Buttons buttonText="Welcome to IFTTT" buttonColorClass="bg-blue-500"/>
 
@@ -14,9 +16,10 @@ const TopNav = () => {
 
             <div className="flex space-x-10">
                 <div className="flex space-x-10">
-                    <p className="text-2xl font-bold">Applets</p>
-                    <p className="text-2xl font-bold">Explore</p>
-                    <p className="text-2xl font-bold">Developers</p>
+                    <Link to="/AppletsPage" className="text-2xl font-bold">Applets</Link>
+                    <Link to="/ExplorePage" className="text-2xl font-bold">Explore</Link>
+                    <Link to="/DevelopersPage" className="text-2xl font-bold">Explore</Link>
+
                 </div>
                 <div className="flex space-x-10">
 
