@@ -53,10 +53,10 @@ const SearchSection = () => {
         <div>
             <div>
                 <div className="tabs flex space-x-10 justify-evenly">
-                    <a onClick={() => allCardsClick()} className={displayAllCards ? "tab tab-active" : "tab"}>All</a>
-                    <a onClick={() => appletsCardsClick()} className={displayAppletsCard ? "tab tab-active" : "tab"}>Applets</a>
-                    <a onClick={() => servicesCardsClick()} className={displayServicesCard ? "tab tab-active" : "tab"}>Services</a>
-                    <a onClick={() => storyCardsClick()} className={displayStoryCards? "tab tab-active" : "tab"}>Stories</a>
+                    <a onClick={() => allCardsClick()} className={displayAllCards ? "tab tab-active tab-bordered" : "tab tab-bordered"}>All</a>
+                    <a onClick={() => appletsCardsClick()} className={displayAppletsCard ? "tab tab-active tab-bordered" : "tab tab-bordered"}>Applets</a>
+                    <a onClick={() => servicesCardsClick()} className={displayServicesCard ? "tab tab-active tab-bordered" : "tab tab-bordered"}>Services</a>
+                    <a onClick={() => storyCardsClick()} className={displayStoryCards? "tab tab-active tab-bordered" : "tab tab-bordered"}>Stories</a>
                 </div>
             </div>
             <div className="form-control">

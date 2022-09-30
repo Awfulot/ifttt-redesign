@@ -9,6 +9,7 @@ import HomePage from "./HomePage";
 import AppletsPage from "./AppletsPage";
 import DevelopersPage from "./DevelopersPage";
 import ExplorePage from "./ExplorePage";
+import CreatePage from "./CreatePage";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: "/ExplorePage",
                 element: <ExplorePage/>
+            },
+            {
+                path: "/CreatePage",
+                element: <CreatePage/>
             }
         ]
     }
