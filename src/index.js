@@ -10,6 +10,8 @@ import AppletsPage from "./AppletsPage";
 import DevelopersPage from "./DevelopersPage";
 import ExplorePage from "./ExplorePage";
 import CreatePage from "./CreatePage";
+import SignUpPage from "./SignUpPage";
+import LogInPage from "./LogInPage";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -36,6 +38,16 @@ const router = createBrowserRouter([
             {
                 path: "/CreatePage",
                 element: <CreatePage/>
+            }
+            ,
+            {
+                path: "/sign-up-page",
+                element: <SignUpPage/>
+            }
+            ,
+            {
+                path: "/log-in-page",
+                element: <LogInPage/>
             }
         ]
     }

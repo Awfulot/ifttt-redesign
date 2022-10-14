@@ -18,7 +18,9 @@ const TopNav = () => {
                 <div className="flex space-x-10">
                     <Link to="/AppletsPage" className="text-2xl font-bold">Applets</Link>
                     <Link to="/ExplorePage" className="text-2xl font-bold">Explore</Link>
-                    <Link to="/DevelopersPage" className="text-2xl font-bold">Explore</Link>
+                    <Link to="/DevelopersPage" className="text-2xl font-bold">Developers</Link>
+                    <Link to="/sign-up-page" className="text-2xl font-bold">Sign Up</Link>
+                    <Link to="/log-in-page" className="text-2xl font-bold">Log in</Link>
 
                 </div>
                 <div className="flex space-x-10">
