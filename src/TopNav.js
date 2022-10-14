@@ -26,7 +26,7 @@ const TopNav = () => {
                 <div className="flex space-x-10">
 
                     <Buttons buttonText="Upgrade" buttonColorClass="bg-gray-700"/>
-                    <Buttons buttonText="Create" buttonColorClass="bg-gray-700"/>
+
                     <Link to="/CreatePage" className="text-xl font-bold bg-gray-700 rounded-md text-center text-white p-2 ">Create</Link>
 
 
