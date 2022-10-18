@@ -1,7 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Content from "./Content";
 
+
+
+
 const HomePage = () => {
+
+
+
     return (
         <div>
             <Content/>

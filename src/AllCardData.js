@@ -107,7 +107,7 @@ const AllCardData = () => {
 
     return (
         <div>
-            {allStories.map( storyContent => <DisplayGridCard {...storyContent}/>)}
+            {allStories.map( storyContent => <DisplayGridCard key={storyContent.id}{...storyContent}/>)}
         </div>
     );
 };

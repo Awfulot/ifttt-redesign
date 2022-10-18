@@ -28,10 +28,29 @@ const handleSignUp = async (e) => {
     //console.log(supabase)
 }
 
+
+    const handleLSignInWithLinkedin = async () => {
+        let {user,error} = await supabase.auth.signInWithOAuth({
+
+            provider: "linkedin"
+        })
+//after log in save credentials and more
+        console.log(user)
+        console.log(error)
+    }
+    const handleSignInWithGoogle = async () => {
+        let {user,error} = await supabase.auth.signInWithOAuth({
+
+            provider: "google"
+        })
+//after log in save credentials and more
+    }
+
+
     return (
         <div>
-            <button className={"rounded-md bg-blue-400"}>Sign up with Linkedin</button>
-            <button className={"rounded-md bg-blue-400 ml-5"}>Sign up with Google</button>
+            <button onClick={handleLSignInWithLinkedin} className={"rounded-md bg-blue-400"}>Sign up with Linkedin</button>
+            <button onClick={handleSignInWithGoogle} className={"rounded-md bg-blue-400 ml-5"}>Sign up with Google</button>
             <form onSubmit={handleSignUp} className={"mt-3"}>
                 <input type="email" className="border-2" placeholder="Email" ref={emailInput}/>
                 <input type="text" className="border-2" placeholder="Password" ref={passInput}/>
