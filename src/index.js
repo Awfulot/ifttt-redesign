@@ -12,6 +12,7 @@ import ExplorePage from "./ExplorePage";
 import CreatePage from "./CreatePage";
 import SignUpPage from "./SignUpPage";
 import LogInPage from "./LogInPage";
+import UserApplets from "./UserApplets";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
             {
                 path: "/log-in-page",
                 element: <LogInPage/>
+            },
+            {
+                path: "/applet-hub/:id",
+                element: <UserApplets/>
             }
         ]
     }
